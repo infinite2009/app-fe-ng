@@ -1,0 +1,33 @@
+<!-- htmlcs-disable attr-lowercase, attr-value-double-quotes, nest -->
+<div *ngIf="total > 0" class="paging-container clearfix">
+    <div class="paging-size-wrapper l">
+        <span class="paging-size-span">显示行数: </span>
+        <div class="paging-size-container">
+            <span class="paging-size-span paging-size-number-span">{{size}}</span><!--
+         --><a class="paging-size-btn icon-font" href="javascript:void(0);" [class.paging-size-btn-expanded]="expanded" (click)="toggleCollapse()"></a>
+            <ul class="paging-size-list" [class.hidden]="!expanded">
+                <li *ngFor="let item of options.pageSizes;" (click)="toggleCollapse(item)">{{item}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="paging-btn-container r">
+        <a class="paging-previous-btn icon-font" href="javascript:void(0);"
+           *ngIf="total > size && currentPage > 0" (click)="goPreviousPage()"></a>
+        <a *ngIf="currentPage > 2 && pageFlippingBtns.length > 5" class="paging-more icon-font"></a>
+        <ng-template ngFor let-item [ngForOf]="pageFlippingBtns" let-i=index [ngForTrackBy]="trackByBtn">
+            <a *ngIf="window.Math.abs(currentPage - i) <= 2 || (currentPage <3 && i < 5)
+             || ((pageFlippingBtns.length - 1 - currentPage) < 2 && (pageFlippingBtns.length - 1 - i) < 5)"
+               class="paging-flipping-btn tac" href="javascript:void(0);" (click)="onChangePage(i)"
+               [class.paging-flipping-current-btn]="currentPage === i">
+                {{i + 1}}
+            </a>
+        </ng-template>
+        <a *ngIf="pageFlippingBtns.length - 1 - currentPage > 2 && pageFlippingBtns.length > 5" class="paging-more icon-font"></a>
+        <a class="paging-next-btn icon-font" href="javascript:void(0);"
+           *ngIf="total > size && currentPage < (pageFlippingBtns.length - 1)" (click)="goNextPage()"></a>
+        <label for="paging-size-input" style="margin-left: 10px;">跳转至第</label>
+        <input id="paging-size-input" class="paging-size-input tac" type="number" [value]="pageInput ? pageInput : ''" (input)="handlePageInput($event)">
+        <span>页</span>
+        <a class="btn" href="javascript:void(0);" (click)="handleInputConfirm()">确定</a>
+    </div>
+</div>

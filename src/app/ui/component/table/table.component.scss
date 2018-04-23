@@ -1,0 +1,40 @@
+:host {
+    display: block;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+//.loading {
+//    height: 300px;
+//    width: 100px;
+//    margin: auto;
+//    padding-left: 40px;
+//    line-height: 300px;
+//    background-repeat: no-repeat;
+//    background-position: left center;
+//    background-image: url(assets/decorator/loading.gif);
+//}
+
+.no-data {
+    height: 300px;
+    width: 100px;
+    margin: auto;
+    padding-left: 40px;
+    line-height: 300px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: visible;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    border: 1px solid #ccc;
+    padding: 0 8px;
+}

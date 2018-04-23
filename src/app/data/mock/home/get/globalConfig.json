@@ -1,0 +1,231 @@
+{
+    "status": 0,
+    "msg": "",
+    "data": {
+        "menuList": [
+            {
+                "*_fieldList": [],
+                "children": [],
+                "collapsed": false,
+                "disabled": false,
+                "icon": "overview",
+                "id": 1,
+                "length": 4,
+                "module": "0",
+                "target": "",
+                "title": "应用概况",
+                "type": "normal",
+                "uri": "/web/p1365699564/overview?appId="
+            },
+            {
+                "*_fieldList": [],
+                "children": [
+                    {
+                        "*_fieldList": [],
+                        "children": [],
+                        "collapsed": false,
+                        "disabled": false,
+                        "icon": "",
+                        "id": 60,
+                        "length": 4,
+                        "module": "0",
+                        "target": "",
+                        "title": "实时分析",
+                        "type": "normal",
+                        "uri": "/web/p1365699564/overview?appId="
+                    },
+                    {
+                        "*_fieldList": [],
+                        "children": [],
+                        "collapsed": false,
+                        "disabled": false,
+                        "icon": "",
+                        "id": 61,
+                        "length": 4,
+                        "module": "0",
+                        "target": "",
+                        "title": "定制报告",
+                        "type": "normal",
+                        "uri": "/web/p1365699564/overview?appId="
+                    }
+                ],
+                "collapsed": false,
+                "disabled": false,
+                "icon": "custom-analysis",
+                "id": 59,
+                "length": 4,
+                "module": "0",
+                "target": "",
+                "title": "定制分析",
+                "type": "normal",
+                "uri": "/web/p1365699564/overview?appId="
+            },
+            {
+                "*_fieldList": [],
+                "children": [
+                    {
+                        "*_fieldList": [],
+                        "children": [],
+                        "collapsed": false,
+                        "disabled": false,
+                        "icon": "",
+                        "id": 3,
+                        "length": 3,
+                        "module": "0",
+                        "target": "",
+                        "title": "用户趋势",
+                        "type": "normal",
+                        "uri": "/web/p1365699564/overview?appId="
+                    },
+                    {
+                        "*_fieldList": [],
+                        "children": [],
+                        "collapsed": false,
+                        "disabled": false,
+                        "icon": "",
+                        "id": 4,
+                        "length": 4,
+                        "module": "0",
+                        "target": "",
+                        "title": "活跃用户",
+                        "type": "normal",
+                        "uri": "/web/p1365699564/overview?appId="
+                    },
+                    {
+                        "*_fieldList": [],
+                        "children": [],
+                        "collapsed": false,
+                        "disabled": false,
+                        "icon": "overview",
+                        "id": 1,
+                        "length": 4,
+                        "module": "0",
+                        "target": "",
+                        "title": "应用概况",
+                        "type": "normal",
+                        "uri": "/web/p1365699564/overview?appId="
+                    },
+                    {
+                        "*_fieldList": [],
+                        "children": [],
+                        "collapsed": false,
+                        "disabled": false,
+                        "icon": "overview",
+                        "id": 1,
+                        "length": 4,
+                        "module": "0",
+                        "target": "",
+                        "title": "应用概况",
+                        "type": "normal",
+                        "uri": "/web/p1365699564/overview?appId="
+                    },
+                    {
+                        "*_fieldList": [],
+                        "children": [],
+                        "collapsed": false,
+                        "disabled": false,
+                        "icon": "overview",
+                        "id": 1,
+                        "length": 4,
+                        "module": "0",
+                        "target": "",
+                        "title": "应用概况",
+                        "type": "normal",
+                        "uri": "/web/p1365699564/overview?appId="
+                    },
+                    {
+                        "*_fieldList": [],
+                        "children": [],
+                        "collapsed": false,
+                        "disabled": false,
+                        "icon": "overview",
+                        "id": 1,
+                        "length": 4,
+                        "module": "0",
+                        "target": "",
+                        "title": "应用概况",
+                        "type": "normal",
+                        "uri": "/web/p1365699564/overview?appId="
+                    },
+                    {
+                        "*_fieldList": [],
+                        "children": [],
+                        "collapsed": false,
+                        "disabled": false,
+                        "icon": "overview",
+                        "id": 1,
+                        "length": 4,
+                        "module": "0",
+                        "target": "",
+                        "title": "应用概况",
+                        "type": "normal",
+                        "uri": "/web/p1365699564/overview?appId="
+                    }
+                ],
+                "collapsed": false,
+                "disabled": false,
+                "icon": "overview",
+                "id": 1,
+                "length": 4,
+                "module": "0",
+                "target": "",
+                "title": "用户分析",
+                "type": "normal",
+                "uri": "/web/p1365699564/overview?appId="
+            },
+            {
+                "*_fieldList": [],
+                "children": [],
+                "collapsed": false,
+                "disabled": false,
+                "icon": "event-analysis",
+                "id": 15,
+                "length": 4,
+                "module": "0",
+                "target": "",
+                "title": "事件分析",
+                "type": "new",
+                "uri": "/web/p1365699564/overview?appId="
+            }
+        ],
+        "systemConfig": {
+            "ajaxUri": "/web/p1365699564/ajax/post",
+            "baseUri": "/web/p1365699564",
+            "domain": "cp01-testing-hmweb00.cp01.baidu.com:8080",
+            "fabuUrl": "http://fabu.baidu.com/usertype?ut=psp",
+            "feedbackImageBaseUrl": "/static/feedback/",
+            "feedbackTypes": {
+                "1": "绑定SDK与埋点",
+                "2": "功能使用",
+                "3": "指标说明",
+                "4": "异常反馈",
+                "5": "兼容适用",
+                "6": "账号迁移与升级",
+                "7": "建议与合作"
+            },
+            "hmJsFootCode": "<script>var _hmt = _hmt || [];(function() {var hm = document.createElement(\"script\");↵hm.src = \"//hm.baidu.com/hm.js?ca18d9ba49deff6163fdf682b2fac4ea\";↵var s = document.getElementsByTagName(\"script\")[0];s.parentNode.insertBefore(hm, s);})();</script>",
+            "isDemo": null,
+            "memoUri": "/web/p1365699564/common/memo",
+            "now": 1505041248000,
+            "protocol": "http:",
+            "targetUserId": 645884,
+            "trackUri": "/web/p1365699564/stat/index",
+            "userAgentFlag": false,
+            "webRoot": "/web",
+            "webRootAna": "/webana",
+            "webRootRpt": "/webrpt",
+            "whitepaperUrl": "/static/userguide/whitepaper.pdf"
+        },
+        "pageInfo": {
+
+        },
+        "userInfo": {
+            "level": 1,
+            "name": "mtongji",
+            "roles": {
+                "admin": 1
+            },
+            "type": "p"
+        }
+    }
+}

@@ -1,0 +1,126 @@
+@import 'app/ui/scss/mixin.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "Arial", "SimSun", "serif";
+    font-size: 12px;
+    background: none;
+    color: #333;
+}
+
+app-root {
+    display: block;
+}
+
+button {
+    box-sizing: content-box;
+    border-radius: 2px;
+    border: 1px solid #333;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #fff;
+}
+
+body,
+div,
+section,
+textarea,
+ul,
+p {
+    @include scrollBar(4px, 4px, 50px, 50px, #c9c9c9, #989898);
+}
+
+a {
+    border-radius: 2px;
+    &,
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.icon-font {
+    font-family: "iconfont";
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: inherit;
+}
+
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+}
+
+.tal {
+    text-align: left;
+}
+
+.tac {
+    text-align: center;
+}
+
+.tar {
+    text-align: right;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.blue {
+    color: #396fff;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.gray-999 {
+    color: #999;
+}
+
+.gray-ccc {
+    color: #ccc;
+}
+
+.round-corner {
+    border-radius: 2px;
+}
+
+.loading {
+    height: 300px;
+    width: 100px;
+    margin: auto;
+    padding-left: 40px;
+    line-height: 300px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(assets/decorator/loading.gif);
+}

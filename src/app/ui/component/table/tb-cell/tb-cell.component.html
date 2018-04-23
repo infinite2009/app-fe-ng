@@ -1,0 +1,5 @@
+<div class="operation-container" [ngSwitch]="field.type">
+    <a *ngSwitchCase="'link'" routerLink="{{data.rawValue}}" class="td-span" title="{{data.text}}">{{data.text}}</a>
+    <span *ngSwitchCase="'text'" class="td-span" title="{{data.text}}">{{data.text}}</span>
+    <ng-template *ngSwitchDefault appComponentSlot></ng-template>
+</div>

@@ -1,0 +1,5 @@
+<app-report-nav [moduleMenus]="moduleMenus" [activeModuleId]="activeModuleId"></app-report-nav>
+<app-side-nav [menuItems]="moduleMenus[activeModuleId].menu" [activeMenuItem]="activeMenuItem" (onCollapseStateChange)="onAsideNavCollapse($event)"></app-side-nav>
+<section class="report-wrapper" [@selfAdaption]="selfAdaptionState">
+    <router-outlet></router-outlet>
+</section>

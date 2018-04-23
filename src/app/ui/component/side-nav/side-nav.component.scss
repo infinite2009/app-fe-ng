@@ -1,0 +1,69 @@
+@import '../../scss/mixin';
+
+:host-context(.standard) {
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    background-color: $std-blackBG;
+    .aside-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -9;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        max-height: 100%;
+        border-top: 40px solid rgba(0, 0, 0, 0);
+        border-bottom: 40px solid rgba(0, 0, 0, 0);
+        background-color: $std-blackBG;
+        scrollbar-face-color: #f00;
+    }
+
+    .aside-nav::-webkit-scrollbar {
+        width: 4px;
+        height: 8px;
+        border-radius: 4px;
+    }
+
+    .aside-nav::-webkit-scrollbar-thumb:vertical {
+        height: 50px;
+        background-color: #c9c9c9;
+        border-radius: 4px;
+    }
+
+    .aside-nav::-webkit-scrollbar-thumb:vertical:hover {
+        background-color: #989898;
+    }
+
+    .aside-nav::-webkit-scrollbar-button:start:decrement,
+    .aside-nav::-webkit-scrollbar-button:end:increment {
+        display: block;
+        height: 0;
+        background-color: transparent;
+    }
+
+    .aside-nav-header {
+        height: 40px;
+        background-color: $std-blackBG;
+    }
+
+    .aside-nav-btn {
+        width: 16px;
+        height: 40px;
+        margin-left: 4px;
+        padding: 0 25px;
+        color: #abb4be;
+    }
+
+    .aside-nav-btn:hover {
+        color: $std-blue;
+    }
+
+    .aside-nav-btn:after {
+        position: absolute;
+        top: 12px;
+        left: 25px;
+    }
+}

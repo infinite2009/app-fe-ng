@@ -1,0 +1,11 @@
+<div class="clearfix">
+    <div class="logo l"></div>
+    <nav class="nav-top-report l">
+        <ul>
+            <li *ngFor="let link of moduleMenus; let i = index">
+                <a id="stat-module-btn" class="tac" routerLink="{{link.url}}" [class.active]="i === activeModuleId">{{link.label}}</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="user-info-wrapper r"></div>
+</div>

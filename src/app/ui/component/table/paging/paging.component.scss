@@ -1,0 +1,151 @@
+@import '../../../scss/mixin';
+
+:host {
+    display: block;
+}
+
+.paging-container {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.paging-size-span {
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.paging-size-number-span {
+    width: 20px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.paging-size-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.paging-size-list {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    @include border(#ccc, 0);
+    width: 65px;
+    background-color: #fff;
+}
+
+.paging-size-list li {
+    padding: 0 10px;
+    line-height: 24px;
+}
+
+.paging-size-list li:hover {
+    cursor: pointer;
+    background-color: #e5e5e5;
+}
+
+.paging-size-btn,
+.paging-previous-btn,
+.paging-next-btn {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    @include border(#ccc, 2px);
+    vertical-align: middle;
+}
+
+.paging-previous-btn {
+    margin-right: -4px;
+}
+
+.paging-next-btn {
+    margin-left: -4px;
+}
+
+.paging-more:after,
+.paging-size-btn:after,
+.paging-previous-btn:after,
+.paging-next-btn:after {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    content: '\e903';
+}
+
+.paging-size-btn-expanded:after {
+    content: '\e906';
+}
+
+.paging-previous-btn:after {
+    content: '\e927';
+}
+
+.paging-next-btn:after {
+    content: '\e928';
+}
+
+.paging-previous-btn:hover,
+.paging-next-btn:hover {
+    background-color: #e5e5e5;
+}
+
+.paging-more,
+.paging-flipping-btn {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.paging-flipping-btn {
+    margin-left: -4px;
+}
+
+.paging-flipping-current-btn {
+    background-color: #4da7fd;
+    color: #fff;
+}
+
+.paging-more {
+    position: relative;
+}
+
+.paging-more:after {
+    top: 0;
+    content: '\e90b';
+}
+
+.paging-size-input {
+    @include border(#e5e5e5, 2px);
+    width: 24px;
+    height: 22px;
+    padding: 0 4px;
+    margin: 0 4px;
+    line-height: 22px;
+}
+
+.paging-size-input:focus {
+    border: none;
+    width: 26px;
+    outline-width: 2px;
+}
+
+.paging-size-input {
+    -moz-appearance: textfield;
+}
+
+.paging-size-input::-webkit-inner-spin-button,
+.paging-size-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn {
+    margin-left: 10px;
+    line-height: 24px;
+}

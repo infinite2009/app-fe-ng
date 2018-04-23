@@ -1,0 +1,12 @@
+@import "../../../ui/scss/mixin";
+:host-context(.standard) {
+    display: block;
+    .link {
+        line-height: 40px;
+        color: $std-blue;
+        border: 1px solid $std-blue;
+        border-radius: 2px;
+        margin: 40px 20px;
+        padding: 0 20px;
+    }
+}

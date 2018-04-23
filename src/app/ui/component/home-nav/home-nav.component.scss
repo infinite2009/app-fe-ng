@@ -1,0 +1,39 @@
+@import '../../scss/mixin';
+
+:host-context(.standard) {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    nav {
+        background-color: $std-blackBG;
+        .logo {
+        }
+        .link-list {
+            li {
+                display: inline-block;
+                a {
+                    margin: 0 10px;
+                    line-height: 60px;
+                    color: #fff;
+                }
+            }
+        }
+        .login-wrapper {
+            margin-right: 15px;
+            a,
+            button {
+                margin: 14px 5px;
+                padding: 0 20px;
+                line-height: 30px;
+                border: 1px solid #fff;
+                color: #fff;
+            }
+            a {
+                display: inline-block;
+
+            }
+        }
+    }
+}

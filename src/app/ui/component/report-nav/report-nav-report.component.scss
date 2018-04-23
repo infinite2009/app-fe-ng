@@ -1,0 +1,53 @@
+@import '../../scss/mixin';
+
+:host-context(.standard) {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $std-blackBG;
+}
+
+.logo {
+    margin: 0 53px 0 20px;
+    width: 197px;
+    height: 60px;
+    background: url(../../../../assets/decorator/logo.png) center center no-repeat;
+}
+
+.nav-top-report {
+    height: 60px;
+    li {
+        display: inline-block;
+        margin: 0 14px;
+
+        &.active {
+            border-bottome-color: #fff;
+        }
+
+        a {
+            display: block;
+            border-bottom: 4px solid $std-blackBG;
+            padding: 0 2px;
+            height: 56px;
+            width: 70px;
+            font-size: 14px;
+            line-height: 60px;
+            color: #b9b9b9;
+            border-radius: 0;
+            @include transition(border-color);
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #fff;
+            border-color: #fff;
+            @include transition(border-color);
+        }
+        a.active {
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+}

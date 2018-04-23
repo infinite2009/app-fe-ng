@@ -1,0 +1,12 @@
+:host-context(.standard) {
+  display: block;
+  .report-wrapper {
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 206px;
+    right: 0;
+    padding: 20px;
+    overflow: auto;
+  }
+}

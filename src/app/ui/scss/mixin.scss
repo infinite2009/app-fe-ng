@@ -1,0 +1,40 @@
+@import 'variable';
+
+@mixin transition($style) {
+    transition: $style .3s ease-in-out;
+}
+
+@mixin scrollBar($scrollBlockWidth, $scrollBlockHeight, $scrollBarHeight, $scrollBarWidth, $backgroundColor, $hoverBackgroundColor) {
+    &::-webkit-scrollbar {
+        width: $scrollBlockWidth;
+        height: $scrollBlockHeight;
+        border-radius: $scrollBlockWidth / 2;
+    }
+    &::-webkit-scrollbar-thumb:vertical {
+        height: $scrollBarHeight;
+        background-color: $backgroundColor;
+        border-radius: $scrollBlockWidth / 2;
+    }
+    &::-webkit-scrollbar-thumb:horizontal {
+        width: $scrollBarWidth;
+        background-color: $backgroundColor;
+        border-radius: $scrollBlockWidth / 2;
+    }
+    &::-webkit-scrollbar-thumb:vertical:hover {
+        background-color: $hoverBackgroundColor;
+    }
+    &::-webkit-scrollbar-thumb:horizontal:hover {
+        background-color: $hoverBackgroundColor;
+    }
+    &::-webkit-scrollbar-button:start:decrement,
+    &::-webkit-scrollbar-button:end:increment {
+        display: block;
+        width: 0;
+        height: 0;
+        background-color: transparent;
+    }
+}
+
+@mixin border($color, $width) {
+    border: $width solid $color;
+}

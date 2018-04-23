@@ -1,0 +1,14 @@
+<!-- htmlcs-disable attr-lowercase, nest -->
+<a *ngIf="asideNavItem.uri" class="aside-nav-item" [routerLink]="asideNavItem.uri" routerLinkActive="aside-nav-item-active">
+    <i class="icon-font aside-nav-icon {{asideNavItem.icon}}"></i>
+    <span class="link-label" [@asideNavItemToggle]="collapseState">{{asideNavItem.title}}</span>
+</a>
+<a *ngIf="!asideNavItem.uri" class="aside-nav-item aside-nav-item-parent icon-font" [ngClass]="{'icon-up': asideNavItem === activeSibling, 'icon-down': asideNavItem !== activeSibling}" (click)="toggleActive()" href="javascript:void(0);">
+    <i class="icon-font aside-nav-icon {{asideNavItem.icon}}"></i>
+    <span class="link-label" [@asideNavItemToggle]="collapseState">{{asideNavItem.title}}</span>
+</a>
+<ul *ngIf="asideNavItem.children && asideNavItem.children.length" [@asideNavChildToggle]="childCollapseState" class="aside-nav-child-list">
+    <li *ngFor="let child of asideNavItem.children">
+        <a class="aside-nav-child" routerLinkActive="aside-nav-child-active" routerLink="{{child.uri}}">{{child.title}}</a>
+    </li>
+</ul>

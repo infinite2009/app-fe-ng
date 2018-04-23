@@ -1,0 +1,27 @@
+<!-- htmlcs-disable attr-lowercase, nest -->
+<div class="table-container">
+    <table *ngIf="!loading" class="table">
+        <thead>
+            <tr>
+                <th *ngFor="let field of data?.fields">
+                    <app-th-cell [field]="field"></app-th-cell>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngIf="!data?.data.length">
+                <td [attr.colspan]="data?.fields.length">
+                    <div *ngIf="loading" class="loading tac">加载中，请稍候...</div>
+                    <div *ngIf="!data?.data.length" class="no-data">暂无数据</div>
+                </td>
+            </tr>
+            <tr *ngFor="let row of data?.data; let i = index">
+                <td *ngFor="let item of row; let j = index">
+                    <app-tb-cell [field]="data?.fields[j]" [data]="item" [index]="i"></app-tb-cell>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<app-paging *ngIf="customOptions?.pagingOptions.show" [customOptions]="customOptions?.pagingOptions" [total]="total"
+            (pagingChange)="handlePagingChange($event)"></app-paging>

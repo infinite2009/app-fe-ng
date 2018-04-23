@@ -1,0 +1,12 @@
+<div class="aside-nav-header" [@asideNavHeaderToggle]="headerCollapse">
+    <a class="icon-font aside-nav-btn tac r" href="javascript:void(0);" [ngClass]="{'icon-menu-fold': collapsed, 'icon-menu-unfold': !collapsed}" (click)="toggleCollapse()">&nbsp;</a>
+</div>
+<aside class="aside-nav">
+    <nav  (mouseenter)="handleEnter()" (mouseleave)="handleLeave()"  [@asideNavBodyToggle]="bodyCollapse">
+        <ul *ngFor="let asideNavItem of menuItems">
+            <li>
+                <app-side-nav-item [asideNavItem]="asideNavItem" [activeSibling]="activeMenuItem" [collapseState]="bodyCollapse"></app-side-nav-item>
+            </li>
+        </ul>
+    </nav>
+</aside>
